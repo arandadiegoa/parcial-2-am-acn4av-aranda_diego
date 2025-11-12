@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "327741834153",
+    "project_id": "kindystarts",
+    "storage_bucket": "kindystarts.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327741834153:android:a7deb7964776bbe5057ab8",
+        "android_client_info": {
+          "package_name": "com.arandadiegoa.kindystarts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Cdk10gw_PgvktCTE62GupMDCALAGMOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
