@@ -26,7 +26,8 @@ Datos del Niño/a: Nombre, fecha de nacimiento, domicilio y sala/grupo.
 
 Selector de Fecha de Nacimiento: Utiliza un DatePickerDialog para una selección de fecha intuitiva y sin errores.
 
-Campo de Selección de Foto: Un campo personalizado que funciona como un botón para abrir la galería del dispositivo y seleccionar una foto, utilizando las Activity Result APIs modernas.
+Campo de Selección de Foto: Un campo personalizado que funciona como un botón para abrir la galería del dispositivo y seleccionar una foto, utilizando las Activity Result APIs modernas.(
+ "Se refactoriza la subida de foto, implementando PhotoPickerHelper + interfaz en java" )
 
 Manejo Inteligente del Teclado: La pantalla se ajusta automáticamente (adjustResize) para evitar que el teclado tape los campos de texto al momento de escribir.
 
