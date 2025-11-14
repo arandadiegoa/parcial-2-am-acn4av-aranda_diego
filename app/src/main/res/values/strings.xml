@@ -2,8 +2,12 @@
     <string name="app_name">KindyStarts</string>
     <string name="text_logo">"Logo de la app KindyStarts"</string>
     <string name="text_button_createAccount">"Crear cuenta"</string>
-    <string name="text_button_login">"Iniciar sesión"</string>
-    <string name="text_hello">¡Bienvenido,  %1$s!</string>
-    <string name="text_login">"Hola desde login"</string>
+
+    <string name="text_welcome">¡Hola, %1$s¡</string>
+    <string name="text_subtile">¡Que lindo verte hoy!</string>
+    <string name="text_login">"Sistema de login"</string>
+    <string name="text_login_subtitle">Ingresá tu email y clave</string>
     <string name="descripcion_del_logo">Logo de la aplicación KindyStarts</string>
+    <string name="icon_rainbow">Icono de Arcoiris</string>
+    <string name="icon_sun">Icono de Sol</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_register_count">"Crear cuenta"</string>
+    <string name="text_action_register">Registrate</string>
+    <string name="text_already_count">¿Ya tenés cuenta? Inicia Sesión</string>
+</resources>

@@ -76,12 +76,11 @@
             android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_button_login"
+            android:text="@string/text_action_login"
             android:backgroundTint="@color/button"
             android:layout_marginTop="48dp"
             android:textColor="@color/black"
         />
-
 
         <Button
             android:id="@+id/buttonRegister"

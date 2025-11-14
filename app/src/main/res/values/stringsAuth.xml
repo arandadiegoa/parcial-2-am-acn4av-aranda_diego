@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_action_login">Iniciar sesión</string>
+    <string name="text_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_ingress">Ingresar</string>
+    <string name="text_no_count">¿No tenés cuenta? Registrate</string>
+    <string name="text_forgot_password">¿Olvidaste tu clave?</string>
+    <string name="text_logout">Cerrar Sesión</string>
+</resources>

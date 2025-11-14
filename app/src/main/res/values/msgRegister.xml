@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="text_registerTitle">"Formulario de Registro"</string>
-    <string name="text_registerTitleTutor">"Datos del padre/madre/tutor"</string>
-    <string name="text_fullName">"Nombre completo"</string>
-    <string name="text_email">"Correo electrónico"</string>
-    <string name="text_phone">"Teléfono de contacto"</string>
-    <string name="text_password">"Contraseña"</string>
-    <string name="text_registerTitleChild">"Datos del niño/a"</string>
-    <string name="text_birthDate">"Fecha de nacimiento"</string>
-    <string name="text_home">"Domicilio"</string>
-    <string name="text_hall">"Sala/Grupo"</string>
-    <string name="text_register">"Registrar"</string>
-    <string name="text_upload_photo">"Subir Foto"</string>
-    <string name="text_photo_select">"Foto seleccionada ✓"</string>
+    <string name="text_registerTitle">Formulario de Registro</string>
+    <string name="text_registerTitleTutor">Datos del padre/madre/tutor</string>
+    <string name="text_fullName">Nombre completo</string>
+    <string name="text_input_email">Correo electrónico</string>
+    <string name="text_phone">Teléfono de contacto</string>
+    <string name="text_input_password">Contraseña</string>
+    <string name="text_registerTitleChild">Datos del niño/a</string>
+    <string name="text_birthDate">Fecha de nacimiento</string>
+    <string name="text_home">Domicilio"</string>
+    <string name="text_hall">Sala/Grupo</string>
+    <string name="text_register">Registrar</string>
+    <string name="text_upload_photo">Subir Foto</string>
+    <string name="text_photo_select">Foto seleccionada ✓</string>
 </resources>
