@@ -2,10 +2,13 @@ package com.arandadiegoa.kindystarts.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +29,8 @@ public class HomeActivity extends AppCompatActivity {
     //Vistas
     private TextView textViewWelcome;
     private Button buttonLogout;
+    private ProgressBar progressBar;
+    private ScrollView contentScrollView;
 
     //Firebase
     private FirebaseAuth mAuth;
@@ -44,6 +49,12 @@ public class HomeActivity extends AppCompatActivity {
         //Enlazar vistas
         textViewWelcome = findViewById(R.id.textViewWelcome);
         buttonLogout = findViewById(R.id.buttonLogout);
+        progressBar = findViewById(R.id.progressBarHome);
+        contentScrollView = findViewById(R.id.contentScrollView);
+
+        //Estado inicial: Ocultar contenido, mostrar cargando
+        contentScrollView.setVisibility(View.GONE);
+        progressBar.setVisibility(View.VISIBLE);
 
         //Obtener el usuario actual
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -64,9 +75,14 @@ public class HomeActivity extends AppCompatActivity {
         userDocRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                //Mostrar el contenido y ocultar el loading
+                progressBar.setVisibility(View.GONE);
+                contentScrollView.setVisibility(View.VISIBLE);
+
                 if(task.isSuccessful()){
                     DocumentSnapshot document = task.getResult();
                     if(document != null && document.exists()){
+                        //obtener el nombre
                         String childName = document.getString("childName");
 
 
@@ -74,6 +90,10 @@ public class HomeActivity extends AppCompatActivity {
                             textViewWelcome.setText(getString(R.string.text_welcome, childName));
                         }
                     }
+                }else {
+                    // La tarea de Firestore falló
+                    Log.w(TAG, "Error al obtener datos de Firestore: ", task.getException());
+                    textViewWelcome.setText("¡Hola, " + currentUser.getEmail() + "!");
                 }
             }
         });
