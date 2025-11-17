@@ -7,10 +7,32 @@ https://www.figma.com/design/axc8qJWSfJiByNEzdnUCAT/KindyStarts?node-id=0-1&p=f
 
 ---
 
+📱 Capturas de Pantalla
+
+Main
+![Pantalla Principal](assets/main.png)
+
+Login
+![Pantalla de Login](assets/login.png) 
+
+Registro
+![Pantalla de Registro](assets/registro.png)
+
+Home
+![Pantalla Home](assets/home.png)
+
+![Pantalla Home2](assets/home2.png)
+
+
+
 ✨ Características Principales
 Pantalla de Bienvenida (MainActivity):
 
 Presenta la marca de la aplicación con un logo y nombre.
+
+Base de Datos en Tiempo Real:
+
+La información adicional del usuario (Nombre del niño, Nombre del tutor, Teléfono, Sala) se almacena en la nube.
 
 Un carrusel de texto animado (TextSwitcher) que muestra mensajes de bienvenida dinámicos.
 
@@ -37,6 +59,13 @@ La pantalla de destino para los usuarios que completan el registro o inician ses
 
 ---
 
+Backend y Base de Datos (Firebase):
+
+Firebase Authentication: Se utiliza para gestionar todo el ciclo de vida de la autenticación (Crear usuario, Iniciar sesión, Obtener usuario actual, Cerrar sesión) usando el proveedor de Email/Contraseña.
+
+Cloud Firestore: Se utiliza como la base de datos NoSQL principal. Cuando un usuario se registra, sus datos adicionales (como childName, parentName, hall, etc.) se guardan en un documento en la colección users, usando el UID de autenticación como identificador único.
+
+---
 🛠️ Arquitectura y Tecnologías Utilizadas
 Lenguaje: Kotlin.
 
