@@ -181,6 +181,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:contentDescription="@string/content_description"
                         android:src="@drawable/merienda" />
 
                     <TextView
@@ -201,6 +202,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:contentDescription="@string/content_description"
                         android:src="@drawable/patio" />
 
                     <TextView
@@ -221,12 +223,13 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/musica" />
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/img_pintura_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Música" />
+                        android:text = "Pintura" />
 
                 </LinearLayout>
 
@@ -242,14 +245,124 @@
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
-            <ImageView
+            <!--Seccion Eventos del día/semana -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerCarousel"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="8dp"
-                android:contentDescription="@string/text_photo_salient"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ima_jardin"
-                />
+                android:layout_height="220dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_events"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEventosSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:text="@string/text_cumplen_años" />
+
+            <!--Contenedor horizontal 4 iconos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!--Item1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@string/text_guirnalda"
+                        android:src="@drawable/image_guirnaldas" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kiara" />
+
+                </LinearLayout>
+
+                <!-- Item2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@string/text_globos"
+                        android:src="@drawable/image_globos" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Astrid" />
+
+                </LinearLayout>
+
+                <!--Item 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@string/text_torta_cumple"
+                        android:src="@drawable/image_torta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Ciro" />
+
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@string/text_icon_cumple"
+                        android:src="@drawable/image_icon_cumple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Diego" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
             <!-- Boton logout-->
 

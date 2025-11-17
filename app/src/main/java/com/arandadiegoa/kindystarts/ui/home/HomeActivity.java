@@ -2,6 +2,8 @@ package com.arandadiegoa.kindystarts.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +14,7 @@ import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.arandadiegoa.kindystarts.R;
 import com.arandadiegoa.kindystarts.ui.auth.LoginActivity;
@@ -23,6 +26,9 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HomeActivity extends AppCompatActivity {
     private static final String TAG = "HomeActivity";
 
@@ -31,10 +37,17 @@ public class HomeActivity extends AppCompatActivity {
     private Button buttonLogout;
     private ProgressBar progressBar;
     private ScrollView contentScrollView;
+    private ViewPager2 viewPagerCarousel;
 
     //Firebase
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
+
+    //Carousel Automatico
+    private Handler sliderHandler = new Handler(Looper.getMainLooper());
+    private Runnable sliderRunnable;
+    private List<Integer> carouselImages = new ArrayList<>();
+    private final long SLIDER_DELAY_MS = 3500;
 
 
     @Override
@@ -51,6 +64,7 @@ public class HomeActivity extends AppCompatActivity {
         buttonLogout = findViewById(R.id.buttonLogout);
         progressBar = findViewById(R.id.progressBarHome);
         contentScrollView = findViewById(R.id.contentScrollView);
+        viewPagerCarousel = findViewById(R.id.viewPagerCarousel);
 
         //Estado inicial: Ocultar contenido, mostrar cargando
         contentScrollView.setVisibility(View.GONE);
@@ -63,6 +77,8 @@ public class HomeActivity extends AppCompatActivity {
            goToLogin();
            return;
         }
+
+        setupCarousel();
 
         //Logica Bienvenida Firestore
 
@@ -112,6 +128,49 @@ public class HomeActivity extends AppCompatActivity {
                 goToLogin();
             }
         });
+    }
+
+    private void setupCarousel() {
+        //Lista de images
+        carouselImages.add(R.drawable.img_pintura);
+        carouselImages.add(R.drawable.img_pintura1);
+        carouselImages.add(R.drawable.img_pintura2);
+
+        //Configurar el adaptador
+        CarouselAdapter adapter = new CarouselAdapter(carouselImages);
+        viewPagerCarousel.setAdapter(adapter);
+
+        //auto-scroll
+        sliderRunnable = new Runnable() {
+            @Override
+            public void run() {
+                int currentItem = viewPagerCarousel.getCurrentItem();
+                int nextItem = currentItem + 1;
+
+                if(nextItem >= carouselImages.size()) {
+                    nextItem = 0;
+                }
+                viewPagerCarousel.setCurrentItem(nextItem, true); //scroll suave
+
+                sliderHandler.postDelayed(this, SLIDER_DELAY_MS);
+            }
+        };
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //cuando la app vuelve a estar visible, inicia el carousel
+        if(sliderRunnable !=null){
+            sliderHandler.postDelayed(sliderRunnable, SLIDER_DELAY_MS);
+        }
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //Detiene el carousel, cuando la app no es visible
+        if(sliderRunnable != null){
+            sliderHandler.removeCallbacks(sliderRunnable);
+        }
     }
 
     private void goToLogin() {

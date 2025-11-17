@@ -4,4 +4,10 @@
     <string name="content_description">Aviso importante</string>
     <string name="text_today">📅 ¿Qué hacemos hoy?</string>
     <string name="text_photo_salient">📷 Fotos destacadas</string>
+    <string name="text_events">Eventos del día/semana</string>
+    <string name="text_guirnalda">Guirnaldas</string>
+    <string name="text_globos">Globos</string>
+    <string name="text_torta_cumple">Torta de cumpleaños</string>
+    <string name="text_icon_cumple">Icono de cumple</string>
+    <string name="text_cumplen_años">Esta semana cumplen añitos</string>
 </resources>

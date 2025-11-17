@@ -74,7 +74,7 @@ class MainActivity : BaseActivity() {
             while (isActive) {
                 textSwitcher.setText(textMessages[currentIndex])
                 currentIndex = (currentIndex + 1) % textMessages.size
-                delay(4000)
+                delay(3000)
             }
         }
 
