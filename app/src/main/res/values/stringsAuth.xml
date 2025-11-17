@@ -7,4 +7,5 @@
     <string name="text_no_count">¿No tenés cuenta? Registrate</string>
     <string name="text_forgot_password">¿Olvidaste tu clave?</string>
     <string name="text_logout">Cerrar Sesión</string>
+    <string name="text_portal">Portal para padres</string>
 </resources>

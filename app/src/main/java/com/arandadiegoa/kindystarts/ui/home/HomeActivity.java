@@ -18,6 +18,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.arandadiegoa.kindystarts.R;
 import com.arandadiegoa.kindystarts.ui.auth.LoginActivity;
+import com.arandadiegoa.kindystarts.ui.family.ParentPortalActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
 
     //Vistas
     private TextView textViewWelcome;
-    private Button buttonLogout;
+    private Button buttonLogout, buttonPortalParent;
     private ProgressBar progressBar;
     private ScrollView contentScrollView;
     private ViewPager2 viewPagerCarousel;
@@ -65,6 +66,7 @@ public class HomeActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBarHome);
         contentScrollView = findViewById(R.id.contentScrollView);
         viewPagerCarousel = findViewById(R.id.viewPagerCarousel);
+        buttonPortalParent = findViewById(R.id.buttonPortalParent);
 
         //Estado inicial: Ocultar contenido, mostrar cargando
         contentScrollView.setVisibility(View.GONE);
@@ -114,7 +116,18 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-            //Button logout
+        //Portal de padres
+
+        buttonPortalParent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ParentPortalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //Button logout
         buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
