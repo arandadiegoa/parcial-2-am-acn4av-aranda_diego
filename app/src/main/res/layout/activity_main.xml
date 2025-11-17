@@ -51,7 +51,6 @@
         android:id="@+id/main_ilustration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:contentDescription="@string/descripcion_del_logo"
         android:src="@drawable/illustration_people_activities"
         app:layout_constraintBottom_toTopOf="@+id/buttons_container"

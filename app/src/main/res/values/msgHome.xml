@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="text_subTitle">¡Qué lindo verte hoy!</string>
     <string name="msg_important_1">El 21 de septiembre visitaremos la granja, ¡Nuestras raíces!</string>
-    <string name="content_description">Aviso importante</string>
+    <string name="text_importantText">🔔 Avisos importantes</string>
     <string name="text_today">📅 ¿Qué hacemos hoy?</string>
     <string name="text_photo_salient">📷 Fotos destacadas</string>
-    <string name="text_events">Eventos del día/semana</string>
+    <string name="text_events">📅 Eventos del día/semana  </string>
+    <string name="text_weather">☀️🌧️Clima del día</string>
+    <string name="text_weather_subTitle">Soleado con una máxima de 29°️☀️️</string>
     <string name="text_guirnalda">Guirnaldas</string>
     <string name="text_globos">Globos</string>
+    <string name="text_iniciacion">Iniciación</string>
+    <string name="text_merienda">Merienda</string>
+    <string name="text_patio">Patio</string>
+    <string name="text_pintura">Pintura</string>
+    <string name="child_kiara">Kiara</string>
+    <string name="child_astrid">Astrid</string>
+    <string name="child_ciro">Ciro</string>
+    <string name="child_diego">Diego</string>
     <string name="text_torta_cumple">Torta de cumpleaños</string>
     <string name="text_icon_cumple">Icono de cumple</string>
+    <string name="text_icon_arcoiris">Icono de arcoiris</string>
+    <string name="text_icon_sol">Icono de sol</string>
     <string name="text_cumplen_años">Esta semana cumplen añitos</string>
+
 </resources>

@@ -36,7 +36,7 @@
                     android:id="@+id/iconRainbow"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:contentDescription="Icono de arcoiris"
+                    android:contentDescription="@string/text_icon_arcoiris"
                     android:src="@drawable/rainbow"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
                     android:id="@+id/iconSun"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:contentDescription="Icono de sol"
+                    android:contentDescription="@string/text_icon_sol"
                     android:src="@drawable/sun"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +61,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:text="¡Hola!"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -69,14 +68,13 @@
                     app:layout_constraintEnd_toStartOf="@id/iconSun"
                     app:layout_constraintStart_toEndOf="@id/iconRainbow"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_chainStyle="packed"
-                    tools:text="¡Hola, Lorenzo Aranda!" />
+                    app:layout_constraintVertical_chainStyle="packed" />
 
                 <TextView
                     android:id="@+id/textViewWelcomeSubtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¡Qué lindo verte hoy!"
+                    android:text="@string/text_subTitle"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -92,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="🔔 Avisos importantes"
+                android:text="@string/text_importantText"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 />
@@ -121,7 +119,7 @@
                     android:id="@+id/imageViewAviso"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="@string/content_description"
+                    android:contentDescription="@string/text_importantText"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -146,6 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:baselineAligned="false"
                 android:orientation="horizontal"
                 android:weightSum="4">
 
@@ -155,18 +154,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:contentDescription="@string/content_description"
+                        android:contentDescription="@string/text_iniciacion"
                         android:src="@drawable/initiation" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Iniciación" />
+                        android:text="@string/text_iniciacion" />
 
                 </LinearLayout>
 
@@ -176,18 +176,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:contentDescription="@string/content_description"
+                        android:contentDescription="@string/text_merienda"
                         android:src="@drawable/merienda" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Merienda" />
+                        android:text = "@string/text_merienda" />
 
                 </LinearLayout>
 
@@ -197,18 +198,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:contentDescription="@string/content_description"
+                        android:contentDescription="@string/text_patio"
                         android:src="@drawable/patio" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Patio" />
+                        android:text = "@string/text_patio" />
 
                 </LinearLayout>
 
@@ -218,18 +220,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:contentDescription="@string/content_description"
+                        android:contentDescription="@string/text_pintura"
                         android:src="@drawable/img_pintura_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Pintura" />
+                        android:text = "@string/text_pintura" />
 
                 </LinearLayout>
 
@@ -284,7 +287,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
@@ -295,7 +299,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kiara" />
+                        android:text="@string/child_kiara" />
 
                 </LinearLayout>
 
@@ -316,7 +320,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Astrid" />
+                        android:text = "@string/child_astrid" />
 
                 </LinearLayout>
 
@@ -326,7 +330,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
@@ -337,7 +342,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Ciro" />
+                        android:text = "@string/child_ciro" />
 
                 </LinearLayout>
 
@@ -347,7 +352,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="48dp"
@@ -358,11 +364,36 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text = "Diego" />
+                        android:text = "@string/child_diego" />
 
                 </LinearLayout>
 
             </LinearLayout>
+
+            <!--Clima del dia -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/textViewWeather"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_weather"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewWeatherSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:text="@string/text_weather_subTitle" />
 
             <!-- Boton logout-->
 
