@@ -9,17 +9,17 @@ https://www.figma.com/design/axc8qJWSfJiByNEzdnUCAT/KindyStarts?node-id=0-1&p=f
 
 📱 Capturas de Pantalla
 
-Main
 ![Pantalla Principal](assets/main.png)
 
-Login
+
 ![Pantalla de Login](assets/login.png) 
 
-Registro
+
 ![Pantalla de Registro](assets/registro.png)
 
-Home
+
 ![Pantalla Home](assets/home.png)
+
 
 ![Pantalla Home2](assets/home2.png)
 
