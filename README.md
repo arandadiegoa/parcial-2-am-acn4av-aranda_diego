@@ -7,23 +7,16 @@ https://www.figma.com/design/axc8qJWSfJiByNEzdnUCAT/KindyStarts?node-id=0-1&p=f
 
 ---
 
-📱 Capturas de Pantalla
+## 📱 Capturas de Pantalla
 
-![Pantalla Principal](assets/main.png)
+|                 Main                 |
+|:------------------------------------:|
+| ![Pantalla de Main](assets/main.png) 
 
-
-![Pantalla de Login](assets/login.png) 
-
-
-![Pantalla de Registro](assets/registro.png)
-
-
-![Pantalla Home](assets/home.png)
-
-
-![Pantalla Home2](assets/home2.png)
-
-
+| Login | Formulario de Registro | Dashboard Principal |
+| :---: | :---: | :---: | | :---: |
+| ![Pantalla de Login](assets/login.png) | ![Pantalla de Registro](assets/registro.png) | ![Pantalla Principal](assets/home.png) | ![Pantalla Home2](assets/home2.png) |
+| *Diseño de la pantalla de Login.* | *Formulario de registro completo.* | *Dashboard dinámico con datos del niño.* |
 
 ✨ Características Principales
 Pantalla de Bienvenida (MainActivity):
