@@ -9,9 +9,9 @@ https://www.figma.com/design/axc8qJWSfJiByNEzdnUCAT/KindyStarts?node-id=0-1&p=f
 
 ## 📱 Capturas de Pantalla
 
-|                 Main                 | | Login |
-|:------------------------------------:| | :---: |
-| ![Pantalla de Main](assets/main.png) | ! [Pantalla de Login](assets/login.png)
+| Main | | Login |
+| :---: | :---: |
+| ![Pantalla de Main](assets/main.png) | ! [Pantalla de Login](assets/login.png) |
 
 | Formulario de Registro | Dashboard Principal |
 | :---: | :---: | :---: | 
