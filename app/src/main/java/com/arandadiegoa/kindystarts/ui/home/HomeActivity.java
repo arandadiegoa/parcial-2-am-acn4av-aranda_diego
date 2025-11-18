@@ -104,7 +104,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
                         if(childName != null && !childName.isEmpty()) {
-                            textViewWelcome.setText(getString(R.string.text_welcome, childName));
+                            textViewWelcome.setText(getString(R.string.text_welcome, childName.trim()));
                         }
                     }
                 }else {

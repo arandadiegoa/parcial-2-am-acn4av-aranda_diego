@@ -3,19 +3,19 @@
     <string name="portal_subtitle">¿Cómo podemos ayudarte hoy?</string>
 
     <string name="portal_action_1_title">Confirmar asistencia</string>
-    <string name="portal_action_1_desc">Si/no para clases, salidas o actividades.</string>
+    <string name="portal_action_1_desc">En este espacio podés contarnos si tu pequeño o pequeña vendrá al jardín.</string>
 
     <string name="portal_action_2_title">Dejar un mensaje</string>
-    <string name="portal_action_2_desc">Te contactaremos a la brevedad.</string>
+    <string name="portal_action_2_desc">Espacio para que siempre estemos conectados y resolver tus consultas.</string>
 
     <string name="portal_action_3_title">Encuesta corta</string>
     <string name="portal_action_3_desc">¿Cómo se sintieron como familia esta semana?</string>
 
     <string name="portal_action_4_title">Momentos del día</string>
-    <string name="portal_action_4_desc">Participación del día.</string>
+    <string name="portal_action_4_desc">Espacios preparados para explorar, descubrir y jugar según sus intereses.</string>
 
     <string name="portal_action_5_title">Adjuntar documentación</string>
-    <string name="portal_action_5_desc">Ficha de inscripción, certificados y más.</string>
+    <string name="portal_action_5_desc">Espacio para enviarnos la documentación para la inscripción.</string>
 
     <string name="portal_footer_title">Información del Jardin</string>
     <string name="portal_footer_address">Av. Siempre Junto a vos 123</string>

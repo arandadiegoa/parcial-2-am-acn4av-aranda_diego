@@ -99,7 +99,7 @@ public class ParentPortalActivity extends AppCompatActivity {
                     if(document != null && document.exists()){
                         String childName = document.getString("childName");
                         if(childName != null && !childName.isEmpty()){
-                            textViewWelcome.setText(getString(R.string.text_welcome, childName));
+                            textViewWelcome.setText(getString(R.string.text_welcome, childName.trim()));
                         }
                     }
                 }else {
