@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/app_background_color"
     tools:context=".ui.home.HomeActivity">
 
@@ -60,9 +59,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="48dp"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/textViewWelcomeSubtitle"
                     app:layout_constraintEnd_toStartOf="@id/iconSun"
@@ -75,6 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_subTitle"
+                    android:layout_marginTop="18dp"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
