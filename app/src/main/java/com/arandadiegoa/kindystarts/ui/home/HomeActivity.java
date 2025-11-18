@@ -18,7 +18,6 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.arandadiegoa.kindystarts.R;
 import com.arandadiegoa.kindystarts.ui.auth.LoginActivity;
-import com.arandadiegoa.kindystarts.ui.family.ParentPortalActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
