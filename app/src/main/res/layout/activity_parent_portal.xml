@@ -460,7 +460,6 @@
                         android:src="@drawable/nube"
                         android:layout_gravity="center_horizontal" />
 
-                    <!-- Contenedor interno para alinear textos a la izquierda -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
