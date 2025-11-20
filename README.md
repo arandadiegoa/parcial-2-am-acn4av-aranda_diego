@@ -17,6 +17,11 @@ https://www.figma.com/design/axc8qJWSfJiByNEzdnUCAT/KindyStarts?node-id=0-1&p=f
 |:-------------------------------:| :---: |:-----------------------------------------:|
 |![Pantalla de Registro](assets/registro.png) | ![Pantalla Principal](assets/home.png) | ![Pantalla Encuesta](assets/encuesta.png) |
 
+---
+
+Usuarios de prueba
+diegoprueba@gmail.com
+Pass: hola1234
 
 ✨ Características Principales
 Pantalla de Bienvenida (MainActivity):
