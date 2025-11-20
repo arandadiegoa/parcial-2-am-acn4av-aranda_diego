@@ -71,17 +71,21 @@ public class ParentPortalActivity extends AppCompatActivity {
         loadUserData(currentUser);
 
         //Listeners
-        cardAttendance.setOnClickListener(v ->
-                        Toast.makeText(this, "Abriendo Confirmar Asistencia", Toast.LENGTH_SHORT).show());
-        
-        cardMessage.setOnClickListener(v ->
-                        Toast.makeText(this, "Abriendo Dejar un mensaje", Toast.LENGTH_SHORT).show());
-        cardSurvey.setOnClickListener(v ->
-                Toast.makeText(this, "Abriendo Encuesta", Toast.LENGTH_SHORT).show());
-        cardMoments.setOnClickListener(v ->
-                Toast.makeText(this, "Abiendo Momentos", Toast.LENGTH_SHORT).show());
-        cardDocuments.setOnClickListener(v ->
-                Toast.makeText(this, "Abriendo Adjunter documentos", Toast.LENGTH_SHORT).show());
+        View.OnClickListener placeholderListener = v ->
+                Toast.makeText(this, "Próximamente...", Toast.LENGTH_SHORT).show();
+
+        cardAttendance.setOnClickListener(placeholderListener);
+
+        cardMessage.setOnClickListener(placeholderListener);
+
+        cardSurvey.setOnClickListener(v -> {
+            Intent intent = new Intent(ParentPortalActivity.this, SurveysActivity.class);
+            startActivity(intent);
+        });
+
+        cardMoments.setOnClickListener(placeholderListener);
+
+        cardDocuments.setOnClickListener(placeholderListener);
     }
 
     private void loadUserData(FirebaseUser currentUser) {

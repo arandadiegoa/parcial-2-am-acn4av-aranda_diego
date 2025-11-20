@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_ask1">¿Cómo evalúas la experiencia de tu familia con el jardín esta semana?</string>
+    <string name="string_answer1">Muy buena</string>
+    <string name="string_answer2">Buena</string>
+    <string name="string_answer3">Regular</string>
+
+    <string name="string_ask2">¿Te resultó clara la información enviada por el jardín esta semana?</string>
+    <string name="string_answer4">Muy buena y suficiente</string>
+    <string name="string_answer5">A veces confusa</string>
+    <string name="string_answer6">Insuficiente</string>
+
+
+    <string name="string_ask3">¿Qué sugerencia o comentario querés compartir?</string>
+    <string name="string_send">Enviar respuesta</string>
+    <string name="string_free_text">Texto libre</string>
+    <string name="string_desc_nube">Nube decorativa</string>
+</resources>

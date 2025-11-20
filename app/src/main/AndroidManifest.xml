@@ -24,6 +24,7 @@
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.home.HomeActivity" />
         <activity android:name=".ui.home.ParentPortalActivity" />
+        <activity android:name=".ui.home.SurveysActivity" android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

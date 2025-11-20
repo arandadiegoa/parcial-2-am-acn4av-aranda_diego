@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Color de fondo cuando está seleccionado (Efecto sombreado/resaltado) -->
+
+    <!-- Bordes redondeados (Igual que el original para que no salte) -->
+    <corners android:radius="12dp" />
+
+    <!-- Borde de foco (Más grueso y oscuro para dar efecto "onfocusin") -->
+    <stroke
+        android:width="2dp"
+        android:color="#00BCD4" />
+
+</shape>
