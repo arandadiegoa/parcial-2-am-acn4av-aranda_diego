@@ -23,6 +23,8 @@ Usuarios de prueba
 diegoprueba@gmail.com
 Pass: hola1234
 
+---
+
 ✨ Características Principales
 Pantalla de Bienvenida (MainActivity):
 
