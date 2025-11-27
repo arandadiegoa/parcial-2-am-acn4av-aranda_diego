@@ -101,7 +101,7 @@ public class ParentPortalActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     DocumentSnapshot document = task.getResult();
                     if(document != null && document.exists()){
-                        String childName = document.getString("childName");
+                        String childName = document.getString("name");
                         if(childName != null && !childName.isEmpty()){
                             textViewWelcome.setText(getString(R.string.text_welcome, childName.trim()));
                         }

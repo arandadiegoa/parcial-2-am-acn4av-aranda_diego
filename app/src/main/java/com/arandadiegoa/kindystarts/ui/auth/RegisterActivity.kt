@@ -98,12 +98,12 @@ class RegisterActivity : BaseActivity(), PhotoPickerListener {
             val strEmail = email.text.toString()
             val strPhone = phone.text.toString()
             val strPassword = password.text.toString()
-            val strChildName = childName.text.toString()
+            val strName = childName.text.toString()
             val strBirthDate = birthDate.text.toString()
             val strHall = autoCompleteTextView.text.toString().trim()
 
             if (strParent.isBlank() || strEmail.isBlank() || strPhone.isBlank() ||
-                strPassword.isBlank() || strChildName.isBlank() || strBirthDate.isBlank() ||
+                strPassword.isBlank() || strName.isBlank() || strBirthDate.isBlank() ||
                 strHall.isBlank()
 
                 ) {
@@ -142,7 +142,7 @@ class RegisterActivity : BaseActivity(), PhotoPickerListener {
                                     "parentName" to strParent,
                                     "email" to strEmail,
                                     "phone" to strPhone,
-                                    "childName" to strChildName,
+                                    "name" to strName,
                                     "birthDate" to strBirthDate,
 
                                 )
@@ -155,7 +155,7 @@ class RegisterActivity : BaseActivity(), PhotoPickerListener {
                                         submitButton.isEnabled = true
                                         Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
                                         val intent = Intent(this, HomeActivity::class.java)
-                                        intent.putExtra(extraChildName, strChildName)
+                                        intent.putExtra(extraChildName, strName)
                                         startActivity(intent)
                                         finish()
                                     }

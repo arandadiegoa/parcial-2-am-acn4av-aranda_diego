@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     if(document != null && document.exists()){
                         //obtener el nombre
-                        String childName = document.getString("childName");
+                        String childName = document.getString("name");
 
 
                         if(childName != null && !childName.isEmpty()) {
