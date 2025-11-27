@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="option_hall">
-        <item>Sala Naranja</item>
-        <item>Sala Celeste</item>
-        <item>Sala Azul</item>
-        <item>Sala Roja</item>
+        <item>Naranja</item>
+        <item>Celeste</item>
+        <item>Azul</item>
+        <item>Roja</item>
     </string-array>
 </resources>
