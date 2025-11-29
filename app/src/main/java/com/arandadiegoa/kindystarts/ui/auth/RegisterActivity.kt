@@ -145,7 +145,8 @@ class RegisterActivity : BaseActivity(), PhotoPickerListener {
                                     "name" to strName,
                                     "birthDate" to strBirthDate,
                                     "hall" to strHall,
-                                    "uid" to uid
+                                    "uid" to uid,
+                                    "role" to "family"
                                 )
                                 //Guardar el mapa en la colexion users
                                 db.collection("users").document(uid)
